@@ -12,7 +12,7 @@ interface KontakProps {
       <div>
         
           {data.map((dat)=> (
-            <ul className="flex justify-between ">
+            <ul className="flex justify-between " key={dat.id}>
                 <li className="font-semibold text-xl mt-7 px-9 basis-1/3 justify-self-center" suppressHydrationWarning >
                   <h1 className="font-bold text-2xl">Alamat</h1>
                   {dat.alamat}

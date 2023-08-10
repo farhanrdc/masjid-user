@@ -11,7 +11,7 @@ interface JumatProps {
     return ( 
         <div className="flex flex-col-reverse">
            {data.map((dat)=> (
-            <img src={dat.imageUrl} alt="" className="rounded-xl bg-cover"/>
+            <img src={dat.imageUrl} alt="" className="rounded-xl bg-cover" key={dat.id}/>
           ))
           }
         </div>        
