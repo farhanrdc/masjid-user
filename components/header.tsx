@@ -18,7 +18,7 @@ const Header = () => {
             <h1 className='text-3xl'>Masjid Al Mujahidin</h1>
             
             {/* Icon Youtube */}
-            <a href="https://www.youtube.com/watch?v=bt8wNQJaKAk&list=RDReCnlwVZj1M&index=2" target="_blank"
+            <a href="https://www.youtube.com/@InfoMenarikPenting" target="_blank"
             className="w-12 h-12 rounded-full mr-3 flex justify-center items-center border border-slate-300 hover:border-slate-100 hover:bg-white hover:text-black">
                 <svg role="img" width="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
                 className="fill-current" fill="#fff">

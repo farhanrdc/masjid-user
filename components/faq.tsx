@@ -9,7 +9,7 @@ interface FaqProps {
   }) => {
     
     return ( 
-      <>
+      <div>
         <h1 className="judul">Frequently Asked Question (FAQ)</h1> 
         <div className="flex flex-col px-9 mt-4">
           {data.map((dat)=> (
@@ -22,9 +22,7 @@ interface FaqProps {
           ))
           }
         </div>
-        
-        
-      </>
+      </div>
       
      )
   }

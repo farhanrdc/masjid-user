@@ -4,21 +4,21 @@ import Image from "next/image";
 import { Tab } from "@headlessui/react";
 
 import { Image as ImageType } from "@/types";
-import GaleryTab from "./galery-tab";
+import KeuanganTab from "./keuangan-tab";
 
-interface GalleryProps {
+interface KeuanganProps {
     images: ImageType[];
   }  
 
-const Galery : React.FC<GalleryProps> = ({
+const Keuangann : React.FC<KeuanganProps> = ({
     images
   }) => {
   return (
     <Tab.Group as="div" className="flex flex-row-reverse">
-        <div className="mx-9 lg:mt-20 hidden  w-full max-w-2xl sm:block lg:max-w-none basis-1/3">
-        <Tab.List className=" grid grid-cols-2 gap-6 ">
+      <div className="mx-9 lg:mt-20 hidden  w-full max-w-2xl sm:block lg:max-w-none basis-1/3">
+        <Tab.List className=" grid grid-cols-3 gap-6 ">
           {images.map((image) => (
-            <GaleryTab key={image.id} image={image} />
+            <KeuanganTab key={image.id} image={image} />
           ))}
         </Tab.List>
       </div>
@@ -31,7 +31,7 @@ const Galery : React.FC<GalleryProps> = ({
                 fill
                 src={image.url}
                 alt="Image"
-                className="object-cover object-center"
+                className="object-cover object-top"
               />
             </div>
           </Tab.Panel>
@@ -41,4 +41,4 @@ const Galery : React.FC<GalleryProps> = ({
   )
 }
 
-export default Galery
+export default Keuangann

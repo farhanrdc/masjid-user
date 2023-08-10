@@ -10,7 +10,7 @@ const BackButton = () => {
 
     return (
         <button
-        className="mt-10 -mb-10 px-9 ml-9 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 rounded-lg"
+        className="mt-10 -mb-10 px-9 ml-9 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 rounded-xl"
         onClick={goBack}
         >
         Kembali

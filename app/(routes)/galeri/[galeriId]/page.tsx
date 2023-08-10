@@ -2,7 +2,7 @@ import getGaleriDetail from '@/actions/get-galeri-detail';
 import Galery from '@/components/galeri';
 import BackButton from '@/components/ui/back';
 import Container from '@/components/ui/container';
-import Image from 'next/image';
+
 
 export const revalidate = 0;
 

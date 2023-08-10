@@ -74,3 +74,15 @@ export interface Kontak {
     email: string;
     hp: string;
 }
+
+export interface Keuangan {
+    id: string;
+    bulan: string;
+    images: ImageUang[];
+}
+
+
+export interface ImageUang {
+    id: string;
+    url: string;
+}

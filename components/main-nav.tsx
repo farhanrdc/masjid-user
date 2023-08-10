@@ -3,8 +3,7 @@
 import { cn } from "@/lib/utils"
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation"
-import DarkModeToogle from "./darkm";
-import Container from "./ui/container";
+
 
 export function MainNav() {
   const pathname = usePathname();
@@ -64,27 +63,27 @@ export function MainNav() {
     },
     {
         id: 7,
+        href: '/keuangan',
+        label: 'Keuangan',
+        active: pathname === '/keuangan',
+    },
+    {
+        id: 8,
         href: '/jumat',
         label: 'Petugas-Jumat',
         active: pathname === '/jumat',
     },
     {
-        id: 8,
+        id: 9,
         href: '/faq',
         label: 'FAQ',
         active: pathname === '/faq',
     },
     {
-        id: 9,
+        id: 10,
         href: '/kontak',
         label: 'Kontak',
         active: pathname === '/kontak',
-    },
-    {
-        id: 10,
-        href: '/keuangan',
-        label: 'Keuangan',
-        active: pathname === '/keuangan',
     },
     
   ]
@@ -93,7 +92,7 @@ export function MainNav() {
       
       <nav
       className="flex justify-between relative items-center h-full w-full border-t border-b">
-        <DarkModeToogle />   
+        
        {routes.map((route) => (
           <Link
               key={route.id}

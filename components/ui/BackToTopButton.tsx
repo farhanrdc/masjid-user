@@ -29,7 +29,7 @@ const BackToTopButton: React.FC = () => {
   };
 
   return (
-    <>
+    <div>
       {backToTopButton && (
         <a
           onClick={scrollUp}
@@ -38,7 +38,7 @@ const BackToTopButton: React.FC = () => {
           <span className="mt-2 block h-3 w-5 rotate-45 border-t-2 border-l-2"></span>
         </a>
       )}
-    </>
+    </div>
   );
 };
 

@@ -7,7 +7,6 @@ import { cn } from "@/lib/utils";
 import ChangeBackgroundOnScroll from '@/components/ui/cscroll'
 import BackToTopButton from '@/components/ui/BackToTopButton'
 
-
 const font = Urbanist({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -23,14 +22,17 @@ export default function RootLayout({
   
   return (
     <html lang="en" className="scroll-smooth light" style={{colorScheme:'light'}} >
+      
         <body className={cn('relative',font.className)} >
-          <ChangeBackgroundOnScroll>
-          <Navbar />
-            {children}
-            <BackToTopButton />
-          <Footer />
-          </ChangeBackgroundOnScroll>
+            <ChangeBackgroundOnScroll>
+            <Navbar />
+              {children}
+              <BackToTopButton />
+            <Footer />
+            </ChangeBackgroundOnScroll>
+
         </body>
+      
       
     </html>
   )

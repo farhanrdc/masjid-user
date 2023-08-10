@@ -3,8 +3,6 @@
 import {Artikel} from "@/types"
 import Image from "next/image";
 import React from "react";
-import IconButton from "./icon-button";
-import { Expand} from "lucide-react";
 import { useRouter } from "next/navigation";
 
 interface ArtikelCardProps {
@@ -31,14 +29,6 @@ const ArtikelCard: React.FC<ArtikelCardProps> = ({
             className="aspect-square object-cover rounded-md"
             />
 
-            <div className="opacity-0 group-hover:opacity-100 transition absolute w-full px-6 bottom-5">
-                <div className="flex gap-x-6 justify-center">
-                    <IconButton 
-                    onClick={() => {}} 
-                    icon={<Expand size={20} className="text-gray-600" />}
-                    />
-                </div>
-            </div>
         </div>
 
         {/* Description */}

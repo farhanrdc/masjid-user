@@ -3,8 +3,6 @@
 import {Pengurus} from "@/types"
 import Image from "next/image";
 import React from "react";
-import IconButton from "./icon-button";
-import { Expand} from "lucide-react";
 
 
 interface PengurusCardProps {

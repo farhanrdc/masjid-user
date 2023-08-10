@@ -1,7 +1,16 @@
-const Keuangan = () => {
+import getKeuangan from "@/actions/get-keuangan";
+import KeuanganList from "@/components/keuangan-list";
+import Container from "@/components/ui/container"
+
+export const revalidate = 0;
+
+const KeuanganPage = async () => {
+  const keuangan = await getKeuangan()
   return (
-    <div>Keuangan</div>
+    <Container>
+      <KeuanganList items={keuangan}/>
+    </Container>
   )
 }
 
-export default Keuangan
+export default KeuanganPage;

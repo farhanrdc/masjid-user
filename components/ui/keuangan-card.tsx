@@ -1,20 +1,21 @@
 "use client"
 
-import {Galeri} from "@/types"
+import {Keuangan} from "@/types"
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-interface GaleriCardProps {
-    datas: Galeri;
+
+interface KeuanganCardProps {
+    datas: Keuangan;
   }
 
-const GaleriCard: React.FC<GaleriCardProps> = ({
+const KeuanganCard: React.FC<KeuanganCardProps> = ({
     datas
   }) => {
 
     const router = useRouter()
     const handleClick = () => {
-        router.push(`/galeri/${datas?.id}`)
+        router.push(`/keuangan/${datas?.id}`)
     }
 
   return (
@@ -30,24 +31,18 @@ const GaleriCard: React.FC<GaleriCardProps> = ({
 
           <div className="opacity-0 group-hover:opacity-100 transition absolute w-full px-6 top-1/2">
               <div className="flex gap-x-6 justify-center">
-                  <h3 className="bg-white font-bold px-5 py-2 rounded-lg">Lihat Galeri</h3>
+                <h3 className="bg-white font-bold px-5 py-2 rounded-lg">Lihat Keuangan</h3>
               </div>
           </div>
       </div>
 
         {/* Description */}
-      <div>
-        <p className="font-semibold text-xl mb-3">{datas.label}</p>
-        
-        <p >
-          {datas.teksAgenda.slice(0, 70)}<b>...</b>
-        </p>
       
+      <p className="font-semibold text-xl mb-3">{datas.bulan}</p>
       
-      </div>
 
     </div>
   )
 }
 
-export default GaleriCard
+export default KeuanganCard
