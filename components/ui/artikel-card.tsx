@@ -28,6 +28,11 @@ const ArtikelCard: React.FC<ArtikelCardProps> = ({
             fill
             className="aspect-square object-cover rounded-md"
             />
+            <div className="opacity-0 group-hover:opacity-100 transition absolute w-full px-6 top-1/2">
+              <div className="flex gap-x-6 justify-center">
+                <h3 className="bg-white font-bold px-5 py-2 rounded-lg">Lihat Artikel</h3>
+              </div>
+          </div>
 
         </div>
 
