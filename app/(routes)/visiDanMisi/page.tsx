@@ -8,7 +8,7 @@ import Misi from '@/components/misi';
 export const revalidate = 0
 
 const ProfilVisiMisi = async () => {
-  const visi = await getVisi("f18e4abf-6fe1-40c2-839a-a6ab7a8f82f3")
+  const visi = await getVisi("ff6151a1-61e2-4f0e-8520-e5875fa9fa22")
   const misi = await getMisi()
   return (
    <div className='pb-10'>
