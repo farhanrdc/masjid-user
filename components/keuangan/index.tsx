@@ -15,7 +15,7 @@ const Keuangann : React.FC<KeuanganProps> = ({
   }) => {
   return (
     <Tab.Group as="div" className="flex flex-row-reverse">
-      <div className="mx-9 lg:mt-20 hidden  w-full max-w-2xl sm:block lg:max-w-none basis-1/3">
+      <div className="mx-9 lg:mt-20 hidden  w-full max-w-2xl sm:block lg:max-w-none basis-1/5">
         <Tab.List className=" grid grid-cols-3 gap-6 ">
           {images.map((image) => (
             <KeuanganTab key={image.id} image={image} />
@@ -23,7 +23,7 @@ const Keuangann : React.FC<KeuanganProps> = ({
         </Tab.List>
       </div>
 
-      <Tab.Panels className="aspect-square w-full basis-2/3">
+      <Tab.Panels className="aspect-square w-full basis-4/5">
         {images.map((image) => (
           <Tab.Panel key={image.id}>
             <div className="aspect-square relative h-full w-full sm:rounded-lg overflow-hidden">
