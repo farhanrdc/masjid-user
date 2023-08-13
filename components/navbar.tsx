@@ -7,6 +7,8 @@ import { cn } from "@/lib/utils";
 import Header from "./header";
 import useScrollPercentage from "./scroll";
 
+
+
 const Navbar = () => {
   const scrollPercentage = useScrollPercentage();
   const isNavbarFixed = scrollPercentage >= 28

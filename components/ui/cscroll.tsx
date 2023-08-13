@@ -27,7 +27,7 @@ const ChangeBackgroundOnScroll: React.FC<ContainerProps> = ({
   }, []);
 
   return (
-    <div className={`min-h-screen transition duration-300 ease-in ${scrolled ? 'bg-neutral-100' : 'bg-white'}`}>
+    <div className={`min-h-screen transition duration-300 ease-in ${scrolled ? 'bg-neutral-200' : 'bg-neutral-50'}`}>
          {children}
     </div>
   );

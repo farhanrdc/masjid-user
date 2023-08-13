@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils"
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation"
-
+import {MoonIcon} from "@heroicons/react/24/solid"
 
 export function MainNav() {
   const pathname = usePathname();
@@ -92,7 +92,7 @@ export function MainNav() {
       
       <nav
       className="flex justify-between relative items-center h-full w-full border-t border-b">
-        
+        <MoonIcon className="w-7 h-7 text-slate-800 "/> 
        {routes.map((route) => (
           <Link
               key={route.id}
