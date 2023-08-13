@@ -86,3 +86,8 @@ export interface ImageUang {
     id: string;
     url: string;
 }
+
+export interface Product {
+    id: string;
+    url: string;
+}
