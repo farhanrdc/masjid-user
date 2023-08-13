@@ -16,7 +16,7 @@ const Keuangann : React.FC<KeuanganProps> = ({
   return (
     <Tab.Group as="div" className="flex flex-row-reverse">
       <div className="mx-9 lg:mt-20 hidden  w-full max-w-2xl sm:block lg:max-w-none basis-1/5">
-        <Tab.List className=" grid grid-cols-3 gap-6 ">
+        <Tab.List className=" grid grid-cols-1 gap-6 ">
           {images.map((image) => (
             <KeuanganTab key={image.id} image={image} />
           ))}
