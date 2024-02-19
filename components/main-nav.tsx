@@ -63,9 +63,9 @@ export function MainNav() {
     },
     {
         id: 7,
-        href: '/keuangan',
+        href: '/uang',
         label: 'Keuangan',
-        active: pathname === '/keuangan',
+        active: pathname === '/uang',
     },
     {
         id: 8,
@@ -92,7 +92,6 @@ export function MainNav() {
       
       <nav
       className="flex justify-between relative items-center h-full w-full border-t border-b">
-        <MoonIcon className="w-7 h-7 text-slate-800 "/> 
        {routes.map((route) => (
           <Link
               key={route.id}

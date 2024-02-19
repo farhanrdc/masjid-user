@@ -1,15 +1,22 @@
 import getWallpaper from '@/actions/get-wallpaper';
 import Container from '@/components/ui/container'
 import Wallpaper from '@/components/wallpaper';
+import Image from 'next/image';
 
 export const revalidate = 0
 
 const HomePage = async () => {
-  const wallpaper = await getWallpaper("e2512e7b-1904-4a81-a2b8-a9c0196425cb")
+  
   return (
    <Container>
-      <div className="-mt-8 space-y-10 pb-5">
-        <Wallpaper data={wallpaper}/>
+      <div className=" flex justify-center items-center space-y-10 pb-5">
+        <Image 
+              src='/masjid.jpg'
+                alt="Image" 
+                width={700}
+                height={500}
+                className='hover:grayscale rounded-2xl transition'
+        />
       </div>
       <h1 className='judul mb-20'>Selamat Datang di Website Masjid Al Mujahidin</h1>
    </Container> 

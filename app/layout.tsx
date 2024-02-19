@@ -6,12 +6,22 @@ import Navbar from '@/components/navbar'
 import { cn } from "@/lib/utils";
 import ChangeBackgroundOnScroll from '@/components/ui/cscroll'
 import BackToTopButton from '@/components/ui/BackToTopButton'
+import { siteConfig } from '@/config/site'
 
 const font = Urbanist({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Masjid Al Mujahidin',
-  description: 'Website Official Masjid Al Mujahidin, Kelurahan Meruyung, Kota Depok',
+  title: {
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  icons:[
+    {
+      url:"/logo.jpg",
+      href:"/logo.jpg",
+    }
+  ]
 }
 
 export default function RootLayout({
