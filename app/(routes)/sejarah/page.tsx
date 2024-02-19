@@ -6,8 +6,8 @@ import getSejarah from "@/actions/get-sejarah";
 export const revalidate = 0
 
 const SejarahPage = async () => {
-  const pembangunan = await getSejarah("1a06e698-a497-4a3e-b34f-3960e24a6b6e")
-  const renovasi = await getSejarah("d478d1c6-1b46-4d7e-a79a-6474833d26bd")
+  const pembangunan = await getSejarah("5cd3b622-6afe-4f2a-b544-4764ac535b12")
+  const renovasi = await getSejarah("2c8e84e6-fe63-4f19-afe1-0c45709fa19d")
 
   return (
     <div className='pb-10 '>
